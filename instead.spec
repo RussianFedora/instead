@@ -48,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/%{name}/*
 %{_datadir}/applications/*
 %{_datadir}/pixmaps/*
-%{_mandir}/man6/%{name}.6.gz
+%{_mandir}/man6/%{name}.6.*
 
 %changelog
 * Sun Nov  6 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 1.5.2-1.R
