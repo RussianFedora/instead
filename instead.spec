@@ -12,7 +12,11 @@ BuildRequires:	SDL-devel
 BuildRequires:	SDL_mixer-devel
 BuildRequires:	SDL_image-devel
 BuildRequires:	SDL_ttf-devel
+%if 0%{?fedora} >= 20
 BuildRequires:	compat-lua-devel
+%else
+BuildRequires:	lua-devel
+%endif
 BuildRequires:	zlib-devel
 BuildRequires:	desktop-file-utils
 
