@@ -31,7 +31,11 @@ chmod +x configure
 
 %build
 #patch lua and install path
+%if 0%{?fedora} >= 20
 sed -e 's/lua5/lua-5/' -e 's/\/local//' -i Rules.make.system
+%else
+sed -e 's/lua5\.1/lua/' -e 's/\/local//' -i Rules.make.system
+%endif
 rm Rules.make
 ln -s Rules.make.system Rules.make
 %configure
