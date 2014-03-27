@@ -13,6 +13,7 @@ BuildRequires:	SDL_mixer-devel
 BuildRequires:	SDL_image-devel
 BuildRequires:	SDL_ttf-devel
 BuildRequires:	compat-lua-devel
+BuildRequires:	zlib-devel
 BuildRequires:	desktop-file-utils
 
 %description 
